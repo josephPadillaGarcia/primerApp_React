@@ -1,6 +1,6 @@
 import React from 'react'
 import plantillaWeb from '../img/category-tiles-wordpress.png'
-import '../style/tarjeta.css'
+import './style/tarjeta.css'
 
 class Tarjet extends React.Component{
 

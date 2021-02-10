@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/tarjeta.css'
+import './style/tarjeta.css'
 
 function entrada(props){
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Entrada from '../componente/Entrada.js'
-import Tarjeta from '../componente/tarjeta.js'
+import ListarTarjetas from '../componente/listarTarjetas.js'
 
 import imgWordPress from '../img/category-tiles-wordpress.png'
 import imgEcommerce from '../img/category-tiles-ecommerce.png'
@@ -65,25 +65,11 @@ class App extends React.Component{
 				/>
 
 				<div className="container">
-					<div className="row">
-						{
+					<ListarTarjetas
 
-							this.state.data.map((listar)=>{
+						listarTarjetas={this.state.data}
 
-								return (
-
-									<Tarjeta 
-										titulo={listar.titulo}
-										descripcion={listar.descripcion}
-										img={listar.imagen}
-									/>
-
-								)
-
-							})
-
-						}
-					</div>					
+					/>					
 				</div>
 			</div>		
 
